@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Pure_White">#FFF</color>
+    <color name="main_table_row">#EAEDF3</color>
+    <color name="blue">#0EA6EE</color>
+    <color name="red">#DE8677</color>
+    <color name="trans">#00000000</color>
+    <color name="lightblue">#A8DFF4</color>
+    <color name="gray">#F0F0F0</color>
+    <!-- 灰色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 白色 -->
+    <color name="touming">#00FFFFFF</color>
+    <!-- 透明 -->
+
+    <color name="redtext">#E61A5F</color>
+    <!-- 红色字体 -->
+    <color name="graytext">#F0F0F0</color>
+    <!-- 灰色字体 -->
+    <color name="bluetext">#2CABE2</color>
+    <!-- 蓝色字体 -->
+    <color name="actionbarbg">#48829D</color>
+    <color name="stroke_gray">#ffbbbbbb</color>
+    <color name="item_background_pressed">#ff00a7ff</color>
+    <color name="bg_white">#ffffffff</color>
+    <color name="text_color_white">#ffffffff</color>
+    <color name="text_color_gray_deep">#ff666666</color>
+    <color name="bg_gray_deep">#ffeeeeee</color>
+    <color name="text_color_gray_light">#ffb8b8b8</color>
+    <color name="bg_gray_light">#fffafafa</color>
+
+    <drawable name="color_1">#b04f9ebf</drawable>
+    <drawable name="color_2">#b0ff6666</drawable>
+    <drawable name="color_3">#b0a3dced</drawable>
+    <drawable name="color_4">#b0f09e6f</drawable>
+    <drawable name="color_5">#b09999ff</drawable>
+    <drawable name="color_6">#b0ffff66</drawable>
+    <drawable name="color_7">#b0b2ff66</drawable>
+    <drawable name="color_8">#b0FF34B3</drawable>
+    <drawable name="color_9">#b040E0D0</drawable>
+    <drawable name="color_10">#b000EE00</drawable>
+    <drawable name="color_11">#b0FFFF11</drawable>
+    <drawable name="color_12">#b03998D8</drawable>
+    <drawable name="color_13">#b0C129E8</drawable>
+    <drawable name="color_14">#b031DF31</drawable>
+    <drawable name="color_15">#b04141CF</drawable>
+    <drawable name="color_16">#b03C72C4</drawable>
+    <drawable name="color_17">#b033AECC</drawable>
+    <drawable name="color_18">#b01AE6BD</drawable>
+    <drawable name="color_19">#b092DD22</drawable>
+    <drawable name="color_20">#b0E7E4E4</drawable>
+    <drawable name="edge_color">#55f2f2f2</drawable>
+    <drawable name="slider_background">#eeeeee</drawable>
+    <drawable name="slider_seperator">#dedede</drawable>
+    <drawable name="pure_white">#fff</drawable>
+    <drawable name="transparent">#00FFFFFF</drawable>
+
+    <!-- main -->
+    <color name="main_ll_bg_class">#d1dadf</color>
+    <color name="main_ll_bg_lib">#5cbeb1</color>
+    <color name="main_ll_bg_gpa">#f7d766</color>
+    <color name="main_ll_bg_mession">#e67565</color>
+
+    <drawable name="main_ll_class_p">#777777</drawable>
+    <drawable name="main_ll_class_up">#d1dadf</drawable>
+    <drawable name="main_ll_lib_p">#259384</drawable>
+    <drawable name="main_ll_lib_up">#5cbeb1</drawable>
+    <drawable name="main_ll_gpa_up">#f7d766</drawable>
+    <drawable name="main_ll_gpa_p">#edbc0c</drawable>
+    <drawable name="main_ll_mession_up">#e67565</drawable>
+    <drawable name="main_ll_mession_p">#d04c39</drawable>
+
+
+    <!-- 打卡 -->
+    <color name="col_title">#00b2b2</color>
+    <color name="daka_list_background">#fff4f7f9</color>
+    <color name="daka_list_colorhint">#00000000</color>
+    <color name="daka_list_divider">#dddbdb</color>
+    <color name="dimgrey">#696969</color>
+    <color name="black">#000000</color>
+    <color name="mession_grey">#808080</color>
+    <color name="floralwhite">#FFFAF0</color>
+    <!-- 花白色 ↑ = = 谁来告诉我，为什么叫花白色 -->
+
+    <color name="start_view_color">#405561</color>
+    
+    <color name="curriculum_add_bt_pressed">#808080</color>
+    <color name="curriculum_add_bt_unpressed">#7F808080</color>
+
+</resources>

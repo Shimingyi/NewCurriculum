@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_bg"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/wid414_leftshow"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/wid414_lefttouch"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/wid414_lefttouch"
+            android:layout_width="25dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/wid414_refer"
+            android:gravity="center"
+            android:src="@drawable/curriculum_jiantou_left"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/wid414_refer"
+            android:layout_width="160dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wid414_class"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="初始化中..."
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/wid414_location"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="请稍候……"
+                android:textColor="#E38C"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/wid414_righttouch"
+            android:layout_width="25dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/wid414_refer"
+            android:gravity="center"
+            android:src="@drawable/curriculum_jiantou_right"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wid414_rightshow"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/wid414_righttouch"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

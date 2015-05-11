@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+       android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/actionbarbg">
+
+        <TextView
+            android:id="@+id/add_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#eeeeee"
+            android:text="添加白应用" />
+
+        <TextView
+            android:id="@+id/startxueba_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#eeeeee"
+            android:text="开启学霸模式 " />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/selected_app"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/writesign_pic" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/home/peng/git/NewCurriculum/app/src/main/res/layout/getapplist.xml -->

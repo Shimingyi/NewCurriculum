@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.koudaixueba.LoginActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/login_bagckground"
+        android:orientation="vertical" >
+
+        <!-- 用户名和密码的输入框 -->
+
+        <EditText
+            android:id="@+id/login_sid"
+            android:layout_width="216dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/login_et_shape"
+            android:hint="请输入您的学号"
+            android:inputType="number"
+            android:textColor="#51636D"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/login_pwd"
+            android:layout_width="219dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/login_et_shape"
+            android:hint="请输入选课密码"
+            android:inputType="textPassword"
+            android:textColor="#51636D"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#E0E6E4"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- 登录按钮 -->
+
+            <Button
+                android:id="@+id/login_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_button"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+            <!-- 备注 -->
+
+            <TextView
+                android:id="@+id/zhu"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/login_remark"
+                android:textColor="#51636D"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- 口袋学霸1.0 -->
+
+            <TextView
+                android:id="@+id/biaoqian1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="@string/Login_version"
+                android:textColor="#51636D"
+                android:textSize="14dp" />
+            <!-- 学生在线，诚意出品 -->
+
+            <TextView
+                android:id="@+id/biaoqian2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/online"
+                android:textColor="#51636D"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

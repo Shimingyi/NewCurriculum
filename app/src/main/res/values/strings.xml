@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">口袋学霸</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_curriculum_settings">添课</string>
+    <string name="mainactivity_textview">我的课表</string>
+
+    <string-array name="searchbooktype">
+        <item>题名</item>
+        <item>责任者</item>
+        <item>ISBN/ISSN</item>
+        <item>索书号</item>
+        <item>出版社</item>
+        <item>丛书名</item>
+    </string-array>
+
+
+    <string name="about_title">关于本软件</string>
+    <string name="about_content">此版本适用于Android4.0及以上固件，本软件的下载，安装完全免费，使用过程中产生的数据流量，由运营商收取。如在其他手机系统上使用本产品产生的任何问题。我们将不承担任何责任。\n版权所有：学生在线</string>
+
+    <string name="searchspinnerhint">搜索类型</string>
+    <string name="searchbookhint">请输入关键字</string>
+    <string name="bookdetailintroduce">图书介绍</string>
+    <string name="bookdetaillocation">馆藏信息</string>
+    <string name="bookname">图书名称：</string>
+    <string name="bookid">索书号：</string>
+    <string name="bookpublisher">出版社：</string>
+    <string name="login_remark">\t注：输入您的学号、选课密码之后，您的个人信息将直接从学校教务系统导入应用，不会被泄露，请放心使用</string>
+    <string name="Login_version">口袋学霸 V 1.1.0</string>
+
+    <string name="online">学生在线\n诚意出品</string>
+    <string name="feedback_title">用户反馈</string>
+    <string name="feedback_explain">使用中如果遇到任何问题\n请及时联系我们\n发送邮件至：online_mobile@163.com\n学生在线官方网站：\nhttp://www.online.sdu.edu.cn\n如果您有更好的创意或建议\n也欢迎与我们沟通交流\n学生在线，我们一直在努力</string>
+    <string name="feedback_bt_send">发送</string>
+    <string name="title_activity_activity_curriculum_detail">课程表</string>
+    <string name="title_activity_activity__gp">成绩</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="gpa_title">hello,王小明</string>
+    <string name="backbutton">backbutton</string>
+    <string name="gpa_board_title">成绩神马的都是浮云</string>
+    <string name="defult_term">2014年秋季学期</string>
+    <string name="str_now">（当前）</string>
+    <string name="str_gpa">绩点：</string>
+    <string name="defult_gpa">100</string>
+    <string name="name_course">课程名</string>
+    <string name="credit">学分</string>
+    <string name="score">成绩</string>
+    <string name="course_attr">课程属性</string>
+    <string name="title_activity_activity__room">自习室</string>
+
+    <!-- 打卡 -->
+    <string name="mession_title">晨起鸟养成</string>
+    <string name="mession_confirm">确定</string>
+    <string name="mession_cancel">取消</string>
+    <string name="mession_complete">完  成</string>
+    <string name="mession_undo">撤  销</string>
+
+
+    <string name="main_ll_tv_class">自习室</string>
+    <string name="main_ll_tv_lib">图书馆</string>
+    <string name="main_ll_tv_gpa">我的成绩</string>
+    <string name="main_ll_tv_mession">每日打卡</string>
+
+    <string name="app_version">V 1.2.0</string>
+    <string name="start_welcome">Welcome</string>
+
+    <!-- 添加课程界面 -->
+    <string name="add_curriculum_classname_hint">请输入课程名称</string>
+    <string name="add_curriculum_classlocation_hint">请输入上课地点</string>
+    <string name="add_curriculum_moreclasstime">添加更多上课时间</string>
+    <string name="add_curriculum_moretime_tv">上课时间</string>
+    <string-array name="add_curriculum_spinner_week">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+    <string-array name="add_curriculum_spinner_time">
+        <item>第一大节</item>
+        <item>第二大节</item>
+        <item>第三大节</item>
+        <item>第四大节</item>
+        <item>第五大节</item>
+    </string-array>
+
+</resources>

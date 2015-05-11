@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.sdu.online.newcurriculum"
+    android:versionCode="3"
+    android:versionName="1.2.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+        android:name="cn.edu.sdu.online.app.Main"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NewCurriculumTheme">
+        <activity
+            android:name="cn.edu.sdu.online.newcurriculum.Activity_Start"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_Main"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activity_BookDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Lib"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_IndividualCenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_Feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_AboutApp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity_curriculumDetail"
+            android:label="@string/title_activity_activity_curriculum_detail" />
+        <activity
+            android:name=".Activity_GPA"
+            android:label="@string/title_activity_activity__gp" />
+        <activity
+            android:name=".Activity_Mession"
+            android:label="@string/mession_title" />
+        <activity
+            android:name="cn.edu.sdu.online.superXueba.StartActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.edu.sdu.online.superXueba.addAppActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.edu.sdu.online.superXueba.InterceptActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.edu.sdu.online.superXueba.SetTimeActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Activity_Room"
+            android:label="@string/title_activity_activity__room" />
+
+        <service android:name="cn.edu.sdu.online.superXueba.XuebaService" />
+        <!-- 资讯中心 -->
+        <activity
+            android:name=".Activity_ConsultCenter"
+            android:label="咨讯中心" />
+        <activity
+            android:name=".Activity_Sign"
+            android:label="我要签到" />
+        <activity
+            android:name=".ReleaseQuestion"
+            android:label="我要提问" />
+        <activity
+            android:name=".Activity_PublishHomework"
+            android:label="我的作业" />
+        <activity
+            android:name=".Activity_ConsultCenter_PinglunActivity"
+            android:label="评论" />
+        <activity
+            android:name=".Activity_QuestionDetails"
+            android:label="问题详情" />
+        <activity
+            android:name=".Activity_AnswerQuestion"
+            android:label="我要回答" />
+        <activity
+            android:name=".WriteCommentActivity"
+            android:label="我要评论" />
+        <activity
+            android:name=".Activity_AddClass"
+            android:label="添加课程" />
+
+        <!-- 桌面插件 -->
+
+        <receiver
+            android:name="cn.edu.sdu.online.widget.Curriculum_Widget_41"
+            android:label="口袋学霸课表插件4X1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/currculum_widget_4_1_4" />
+        </receiver>
+
+        <service android:name="cn.edu.sdu.online.widget.Curriculum_Widget_41_service">
+            <intent-filter>
+                <action android:name="WID414_CLICK_LEFTSHOW" />
+                <action android:name="WID414_CLICK_LEFTTOUCH" />
+                <action android:name="WID414_CLICK_CENTERSHOW" />
+                <action android:name="WID414_CLICK_RIGHTTOUCH" />
+                <action android:name="WID414_CLICK_RIGHTSHOW" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="cn.edu.sdu.online.widget.Curriculum_Widget_42"
+            android:label="口袋学霸课表插件4x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/curriculum_widget_4_2" />
+        </receiver>
+
+        <service android:name="cn.edu.sdu.online.widget.Curriculum_Widget_42_service">
+            <intent-filter>
+                <action android:name="WIDGET_4_2_CENTER" />
+                <action android:name="WIDGET_4_2_LEFT" />
+                <action android:name="WIDGET_4_2_RIGHT" />
+                <action android:name="WIDGET_4_2_UP" />
+                <action android:name="WIDGET_4_2_DOWN" />
+            </intent-filter>
+        </service>
+
+        <!-- 友盟 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5481c6f3fd98c5628d000800" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+
+        <activity android:name="com.umeng.fb.ConversationActivity" />
+    </application>
+
+</manifest>

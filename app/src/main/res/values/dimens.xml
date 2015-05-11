@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_textview">16sp</dimen>
+    <dimen name="main_margin_horizontal">2dp</dimen>
+    <dimen name="main_table_row0_textpadding">1dp</dimen>
+    <dimen name="main_curriculum_textsize">10sp</dimen>
+    <dimen name="main_curriculum_textview_width">25dp</dimen>
+    <dimen name="reborrow_dialogbg">4dp</dimen>
+    
+    
+    <dimen name="actionbar_popupmenu_marginUB">6dp</dimen> 
+    <!-- popupwindow中imagebutton的位置    UB：Up and Bottom; RL: Right and Left -->
+    <dimen name="actionbar_popupmenu_marginRL">6dp</dimen>
+     <dimen name="actionbar_popupmenu_button_size">18dp</dimen>
+     <dimen name="lib_login_textsize">20sp</dimen>
+     <dimen name="gpa_board_sun_size">32dp</dimen>
+     <dimen name="start_tvsize_welcome">26sp</dimen>
+     <dimen name="start_tvsize_others">20sp</dimen>
+
+    <!-- composerLayout -->
+    <dimen name="curriculum_composer_bt">30dp</dimen>
+    <dimen name="curriculum_composer_bt_margin_bottom">10dp</dimen>
+    <dimen name="curriculum_composer_bt_margin_left">5dp</dimen>
+     
+    <!-- curriculum dialog-->
+    <dimen name="curriculum_dialog_height">180dp</dimen>
+    <dimen name="curriculum_dialog_width">150dp</dimen>
+    <dimen name="curriculum_dialog_bt_size">20dp</dimen>
+
+    <!-- 添加课程界面 -->
+    <dimen name="activity_add_curriculum_padding_horizental">10dp</dimen>
+    <dimen name="activity_add_curriculum_padding_top">20dp</dimen>
+    <dimen name="activity_add_curriculum_icon_size">40dp</dimen>
+    <dimen name="activity_add_curriculum_text_size">22sp</dimen>
+    <dimen name="add_curriculum_edit_margin">4dp</dimen>
+    <dimen name="add_curriculum_view_margin">10px</dimen>
+    
+
+</resources>

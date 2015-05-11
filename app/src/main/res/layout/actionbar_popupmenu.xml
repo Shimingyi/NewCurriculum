@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/actionbar_popupmenu_shape"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/popupwindow_me"
+        android:layout_width="@dimen/actionbar_popupmenu_button_size"
+        android:layout_height="@dimen/actionbar_popupmenu_button_size"
+        android:layout_marginBottom="@dimen/actionbar_popupmenu_marginUB"
+        android:layout_marginLeft="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginRight="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginTop="@dimen/actionbar_popupmenu_marginUB"
+        android:background="@drawable/actionbar_popupmenu_me" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#1B4C6D" />
+
+    <ImageButton
+        android:id="@+id/popupwindow_login"
+       android:layout_width="@dimen/actionbar_popupmenu_button_size"
+        android:layout_height="@dimen/actionbar_popupmenu_button_size"
+        android:layout_marginBottom="@dimen/actionbar_popupmenu_marginUB"
+        android:layout_marginLeft="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginRight="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginTop="@dimen/actionbar_popupmenu_marginUB"
+        android:background="@drawable/actionbar_popupmenu_login" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#1B4C6D" />
+
+    <ImageButton
+        android:id="@+id/popupwindow_super"
+      android:layout_width="@dimen/actionbar_popupmenu_button_size"
+        android:layout_height="@dimen/actionbar_popupmenu_button_size"
+       android:layout_marginBottom="@dimen/actionbar_popupmenu_marginUB"
+        android:layout_marginLeft="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginRight="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginTop="@dimen/actionbar_popupmenu_marginUB"
+        android:background="@drawable/actionbar_popupmenu_super" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#1B4C6D" />
+
+    <ImageButton
+        android:id="@+id/popupwindow_score"
+      android:layout_width="@dimen/actionbar_popupmenu_button_size"
+        android:layout_height="@dimen/actionbar_popupmenu_button_size"
+       android:layout_marginBottom="@dimen/actionbar_popupmenu_marginUB"
+        android:layout_marginLeft="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginRight="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginTop="@dimen/actionbar_popupmenu_marginUB"
+        android:background="@drawable/actionbar_popupmenu_score" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#1B4C6D" />
+
+    <ImageButton
+        android:id="@+id/popupwindow_setting"
+       android:layout_width="@dimen/actionbar_popupmenu_button_size"
+        android:layout_height="@dimen/actionbar_popupmenu_button_size"
+        android:layout_marginBottom="@dimen/actionbar_popupmenu_marginUB"
+        android:layout_marginLeft="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginRight="@dimen/actionbar_popupmenu_marginRL"
+        android:layout_marginTop="@dimen/actionbar_popupmenu_marginUB"
+        android:background="@drawable/actionbar_popupmenu_close" />
+
+</LinearLayout>

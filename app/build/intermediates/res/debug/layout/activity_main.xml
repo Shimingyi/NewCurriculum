@@ -1,0 +1,828 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context=".Activity_Main" >
+
+    <ScrollView
+        android:id="@+id/activity_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/main_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/Pure_White"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="@string/mainactivity_textview"
+                android:textSize="@dimen/main_textview" />
+
+            <TableLayout
+                android:id="@+id/main_curriculumtable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_margin_horizontal"
+                    android:layout_marginRight="@dimen/main_margin_horizontal"
+                    android:background="@color/main_table_row" >
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text=" " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="一" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="二" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="三" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="四" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="五" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="六" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="日" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_curriculum_row0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/main_margin_horizontal"
+                    android:layout_marginRight="@dimen/main_margin_horizontal"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_table_row"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1" />
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="2" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/main_curriculum00"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:padding="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum01"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum02"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum03"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum04"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum05"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum06"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_curriculum_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/main_margin_horizontal"
+                    android:layout_marginRight="@dimen/main_margin_horizontal"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_table_row"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="3" />
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="4" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/main_curriculum10"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:padding="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum11"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum12"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum13"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum14"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum15"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum16"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_curriculum_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/main_margin_horizontal"
+                    android:layout_marginRight="@dimen/main_margin_horizontal"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_table_row"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="5" />
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="6" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/main_curriculum20"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:padding="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum21"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum22"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum23"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum24"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum25"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum26"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_curriculum_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/main_margin_horizontal"
+                    android:layout_marginRight="@dimen/main_margin_horizontal"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_table_row"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="7" />
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="8" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/main_curriculum30"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:padding="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum31"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum32"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum33"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum34"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum35"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum36"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/main_curriculum_row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/main_margin_horizontal"
+                    android:layout_marginRight="@dimen/main_margin_horizontal"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_table_row"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="9" />
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="10" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/main_curriculum40"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:padding="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum41"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum42"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum43"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum44"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum45"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:text="大学课程(2)@软件园5区407"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_curriculum46"
+                        android:layout_width="@dimen/main_curriculum_textview_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFF"
+                        android:gravity="center_horizontal"
+                        android:lines="4"
+                        android:paddingBottom="@dimen/main_table_row0_textpadding"
+                        android:paddingTop="@dimen/main_table_row0_textpadding"
+                        android:textSize="@dimen/main_curriculum_textsize" />
+                </TableRow>
+
+             
+
+            </TableLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="-2dp"
+                android:background="#D5D5D5" />
+
+            <LinearLayout
+                android:id="@+id/main_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/main_buttons_row0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/main_ll_class"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_menu_ba_class"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_icon_class" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/main_ll_tv_class" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/main_ll_lib"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_menu_ba_lib"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_icon_lib" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/main_ll_tv_lib"
+                            android:textColor="#FFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/main_buttons_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/main_ll_gpa"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_menu_ba_gpa"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_icon_gpa" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/main_ll_tv_gpa"
+                            android:textColor="#FFF" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/main_ll_mession"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_menu_ba_mession"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_icon_mession" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/main_ll_tv_mession"
+                            android:textColor="#FFF" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/home/peng/git/NewCurriculum/app/src/main/res/layout/activity_main.xml -->

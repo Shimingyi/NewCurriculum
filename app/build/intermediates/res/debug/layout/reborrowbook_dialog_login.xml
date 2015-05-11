@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/reborrowbook_login_edittext"
+    android:padding="@dimen/reborrow_dialogbg"
+    android:paddingRight="4dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户："
+            android:textColor="#000"
+            android:textSize="@dimen/lib_login_textsize" />
+
+        <EditText
+            android:id="@+id/rloginun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/reborrowbook_login_edittext"
+            android:hint="校园卡帐号"
+            android:inputType="number"
+            android:paddingLeft="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/lib_login_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textColor="#000"
+            android:textSize="@dimen/lib_login_textsize" />
+
+        <EditText
+            android:id="@+id/rloginpwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/reborrowbook_login_edittext"
+            android:hint="校园卡密码"
+            android:inputType="numberPassword"
+            android:paddingLeft="4dp"
+            android:textColor="#000"
+            android:textSize="@dimen/lib_login_textsize" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/hasacountcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="是否保存账户密码"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Dialog_CancelButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/lib_login_button"
+            android:padding="0dp"
+            android:textColor="#FFF"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/Dialog_ConfrimButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/lib_login_button"
+            android:padding="0dp"
+            android:textColor="#FFF"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/peng/git/NewCurriculum/app/src/main/res/layout/reborrowbook_dialog_login.xml -->

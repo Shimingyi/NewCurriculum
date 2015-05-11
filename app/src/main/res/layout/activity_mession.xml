@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 重写ListView -->
+
+        <cn.edu.sdu.online.view.MessoinListViewCompat
+            android:id="@+id/daka_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/daka_list_background"
+            android:cacheColorHint="@color/daka_list_colorhint"
+            android:divider="@color/daka_list_divider"
+            android:dividerHeight="1.0px"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <SlidingDrawer
+            android:id="@+id/daka_slidingDrawer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:bottomOffset="10dip"
+            android:content="@+id/rl_content"
+            android:focusable="false"
+            android:handle="@+id/daka_ll_handle"
+            android:topOffset="60dip" >
+
+            <LinearLayout
+                android:id="@id/daka_ll_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/daka_btn_bird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/daka_bird_button" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@id/rl_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" >
+
+                <EditText
+                    android:id="@+id/daka_et_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/daka_add_task" />
+
+                <Button
+                    android:id="@+id/daka_btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/daka_et_edit"
+                    android:layout_alignLeft="@id/daka_et_edit"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/lib_login_button"
+                    android:text="@string/mession_cancel"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/daka_btn_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/daka_et_edit"
+                    android:layout_alignRight="@id/daka_et_edit"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/lib_login_button"
+                    android:text="@string/mession_confirm"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+        </SlidingDrawer>
+    </FrameLayout>
+
+</LinearLayout>

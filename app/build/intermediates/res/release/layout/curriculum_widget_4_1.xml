@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_bg"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6FFF">
+
+        <TextView
+            android:id="@+id/leftshow"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/lefttouch"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/lefttouch"
+            android:layout_width="25dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/centershow"
+            android:gravity="center"
+            android:src="@drawable/curriculum_jiantou_left"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/centershow"
+            android:layout_width="110dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="初始化中，\n请稍候……"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/righttouch"
+            android:layout_width="25dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/centershow"
+            android:gravity="center"
+            android:src="@drawable/curriculum_jiantou_right"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rightshow"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/righttouch"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Hao_S/AndroidStudioProjects/NewCurriculum/app/src/main/res/layout/curriculum_widget_4_1.xml -->

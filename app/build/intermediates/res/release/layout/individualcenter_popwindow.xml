@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/individualcenter_sex_male"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/individual_center_female" />
+
+    <ImageButton
+        android:id="@+id/individualcenter_sex_female"
+        android:layout_marginTop="5dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/individual_center_male" />
+
+</LinearLayout><!-- From: file:/C:/Users/Hao_S/AndroidStudioProjects/NewCurriculum/app/src/main/res/layout/individualcenter_popwindow.xml -->

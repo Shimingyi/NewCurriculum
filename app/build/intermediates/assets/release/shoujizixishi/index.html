@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0">
+        <meta http-equiv="Content-Language" content="zh-CN" />
+        <meta name="Generator" content="dreamweaver 9" />
+        <meta name="Robots" content="all" />
+        <meta name="Author" content="林栋，李凌波,郭天茂" />
+        <meta name="Keywords" content="学生在线,山东大学,学生网站" />
+        <meta name="Description" content="学生在线精彩无限,山东大学党委学生工作部版权所有,STUDENT ONLINE"
+        />
+        <meta name="Copyright" content="Copyright (c) 2000-2011 www.online.sdu.edu.cn AllRights Reserved."
+        />
+        <title>
+            学生在线-自习室查询
+        </title>
+        <link href="scripts/css/index.css" rel="stylesheet" type="text/css" />
+        <script src="scripts/javascripts/jquery-1.7.2.min.js" type="text/javascript">
+        </script>
+        <script src="scripts/javascripts/main.js" type="text/javascript">
+        </script>
+    </head>
+    
+    <body>
+        <div class="banner">
+            <div class="banner_tl">
+            </div>
+            <div class="banner_l">
+                <img src="images/banner_l.png" width="143" height="34" />
+            </div>
+            <div class="banner_r">
+                <img src="images/banner_r.png" width="93" height="62" />
+            </div>
+            <div class="banner_tr">
+            </div>
+        </div>
+        <div class="border">
+            <div class="menu">
+                <a id="by_time" href="#">
+                    按时段查询
+                </a>
+                <div class="padding">
+                </div>
+                <a id="by_room" href="#">
+                    按教室查询
+                </a>
+            </div>
+            <form action="" method="post">
+                <div id="by_methord_div" title="by_time">
+                    <input name="by_methord" value="by_time" type="hidden">
+                </div>
+                <div class="week">
+                    本学期共
+                    <strong>
+                        <span id="weeks">
+                        </span>
+                    </strong>
+                    周，当前周次第
+                    <strong>
+                        <span id="week_now">
+                        </span>
+                    </strong>
+                    周
+                </div>
+                <div class="sub_menu">
+                    <div class="sub_menu_block">
+                        <div class="sub_menu_block_txt">
+                            要查询&nbsp;&nbsp;校区
+                        </div>
+                        <div class="sub_menu_block_s">
+                            <select name="campuse" id="campuse">
+                                <!--<option value="1">兴隆山</option>
+                                <option value="2">中心</option>
+                                <option value="3">洪家楼</option>
+                                <option value="4">软件园</option>
+                                <option value="5">千佛山</option>
+                                <option value="6">趵突泉</option>-->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sub_menu_block">
+                        <div class="sub_menu_block_txt">
+                            楼宇
+                        </div>
+                        <div class="sub_menu_block_s">
+                            <select name="building" id="building">
+                                <option value="-1">
+                                    兴隆山教学楼群
+                                </option>
+                                <option value="1">
+                                    1号楼
+                                </option>
+                                <option value="2">
+                                    2号楼
+                                </option>
+                                <option value="3">
+                                    3号楼
+                                </option>
+                                <option value="4">
+                                    4号楼
+                                </option>
+                                <option value="5">
+                                    5号楼
+                                </option>
+                                <option value="6">
+                                    兴隆山实验楼
+                                </option>
+                                <option value="7">
+                                    兴隆山讲学堂
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sub_menu_block">
+                        <div class="sub_menu_block_txt">
+                            教室
+                        </div>
+                        <div class="sub_menu_block_s">
+                            <select name="room" id="room">
+                                <option value="-1">
+                                    全部
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="sub_menu_left">在</div>
+                    <div class="sub_menu_right">
+                        <div class="sub_menu_right_s">
+                            <select name="week_list" id="week_list">
+                                <!--<option value="1">第一周</option>
+                                <option value="2">第二周</option>
+                                <option value="3">第三周</option>
+                                <option value="4">第四周</option>
+                                <option value="5">第五周</option>
+                                <option value="6">第六周</option>-->
+                            </select>
+                        </div>
+                        <div class="sub_menu_right_txt">
+                            周次
+                        </div>
+                    </div>
+                    <div class="sub_menu_right">
+                        <div class="sub_menu_right_s">
+                            <select name="weekday" id="weekday">
+                                <!--<option value="1">周一</option>
+                                <option value="2">周二</option>
+                                <option value="3">周三</option>
+                                <option value="4">周四</option>
+                                <option value="5">周五</option>
+                                <option value="6">周六</option>-->
+                            </select>
+                        </div>
+                        <div class="sub_menu_right_txt">
+                            时间
+                        </div>
+                    </div>
+                    <div class="sub_menu_right">
+                        <div class="sub_menu_right_s">
+                            <select name="interval" id="interval">
+                                <!--<option value="-1">全天</option>
+                                <option value="1">上午</option>
+                                <option value="2">第一大节</option>
+                                <option value="3">第二大节</option>
+                                <option value="4">下午</option>
+                                <option value="5">第三大节</option>
+                                <option value="6">第四大节</option>
+                                <option value="7">晚上</option>
+                                <option value="7">第五大节</option>-->
+                            </select>
+                        </div>
+                        <div class="sub_menu_right_txt">
+                            无课教室
+                        </div>
+                    </div>
+                </div>
+            </form>
+        	<div id="result_out">
+            	<div class="result_title">
+                查询结果
+                </div>
+                <div id="result" style="color: #5F5E61;">
+                	
+                </div>
+                <div class="back">
+                	<span id="back_button">返回</span>
+                </div>
+        	</div>
+            <div class="button_outer">
+                <input type="image" src="images/button.png" width="48.75" height="35.25" id="query">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="switch">
+                <a href="http://www.online.sdu.edu.cn/wapzixishi/" title="简版" target="_blank">
+                    简版
+                </a>
+                &nbsp;
+                <a href="#" title="炫彩版" target="_blank" class="switch_center">
+                    &nbsp;<strong>炫彩版</strong>&nbsp;
+                </a>
+                &nbsp;
+                <a href="http://www.online.sdu.edu.cn/zixishi?from=mobile" title="PC版" target="_blank">
+                    PC版
+                </a>
+            </div>
+            <div class="first_page">
+                <a href="http://www.online.sdu.edu.cn/mobile" title="学线首页" target="_blank">
+                    学线首页
+                </a>
+            </div>
+            <div class="jump">
+                <a href="http://www.online.sdu.edu.cn/" title="友情链接" target="_blank">
+                    友情链接
+                </a>
+            </div>
+            <div class="jump">
+                <a href="mailto:online@mail.sdu.edu.cn" title="联系我们" target="_blank">
+                    联系我们
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>

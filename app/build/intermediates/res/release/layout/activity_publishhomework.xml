@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_homework"
+    android:orientation="vertical" >
+
+    <!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_striped"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/back_homework_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="发布作业"
+            android:textColor="#eeeeee"
+            android:textSize="8pt"
+            android:textStyle="italic" />
+    </LinearLayout>-->
+
+    <ScrollView
+        android:id="@+id/publishhomeworkscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/coursename"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:ems="10"
+                
+                android:hint=" 科目名称(必填)"
+                android:inputType="text"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/homeworkcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_alignLeft="@+id/coursename"
+                android:layout_below="@+id/coursename"
+                android:layout_marginTop="25dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:gravity="top"
+                android:hint=" 作业内容(必填)"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:layout_marginRight="10dp"
+                android:scrollHorizontally="false"
+                android:singleLine="false" />
+
+            <Button
+                android:id="@+id/publishhomework"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/homeworkcontent"
+                android:layout_below="@+id/deadline"
+                android:layout_marginTop="24dp"
+                android:background="#ffffff"
+                android:text="发布作业"
+                android:layout_marginRight="10dp"
+                android:textSize="25dp" />
+
+            <DatePicker
+                android:id="@+id/deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeworkcontent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="39dp"
+                android:calendarViewShown="false" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeworkcontent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="设置收取时间" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/C:/Users/Hao_S/AndroidStudioProjects/NewCurriculum/app/src/main/res/layout/activity_publishhomework.xml -->

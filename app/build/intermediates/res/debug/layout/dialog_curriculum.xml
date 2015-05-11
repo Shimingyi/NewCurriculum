@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/curriculum_dialog_width"
+    android:layout_height="@dimen/curriculum_dialog_height"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/curriculum_dialog"
+        android:layout_width="@dimen/curriculum_dialog_width"
+        android:layout_height="@dimen/curriculum_dialog_height"
+        android:gravity="center"
+        android:text="Hello Seal!" />
+
+    <Button
+        android:id="@+id/curriculum_dialog_del_bt"
+        android:layout_width="@dimen/curriculum_dialog_bt_size"
+        android:layout_height="@dimen/curriculum_dialog_bt_size"
+        android:layout_gravity="top|right"
+        android:background="@drawable/curriculum_dialog_bt_bg"/>
+
+</FrameLayout><!-- From: file:/home/peng/git/NewCurriculum/app/src/main/res/layout/dialog_curriculum.xml -->
