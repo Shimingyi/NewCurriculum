@@ -114,7 +114,7 @@ public class SignTest extends Fragment implements ActionBarListener{
 						String.valueOf(app.getDataStore().getInt(
 								"flagrankidlatest", 0)));
 				HttpUtils http = new HttpUtils();
-				http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, pa,
+				http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, pa,
 						new RequestCallBack<String>() {
 							@Override
 							public void onFailure(HttpException arg0,
@@ -232,7 +232,7 @@ public class SignTest extends Fragment implements ActionBarListener{
 						String.valueOf(app.getDataStore().getInt(
 								"flagrankidoldest", 0)));
 				HttpUtils http = new HttpUtils();
-				http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, pa,
+				http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, pa,
 						new RequestCallBack<String>() {
 
 							@Override

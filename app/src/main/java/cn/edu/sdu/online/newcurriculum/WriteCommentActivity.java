@@ -103,7 +103,7 @@ public class WriteCommentActivity extends Activity {
 								Main.getApp().getDataStore()
 										.getString("stuname", "未知")));
 		HttpUtils http = new HttpUtils();
-		http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, params,
+		http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, params,
 				new RequestCallBack<String>() {
 
 					@Override

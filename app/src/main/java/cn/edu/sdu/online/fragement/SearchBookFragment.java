@@ -136,7 +136,6 @@ public class SearchBookFragment extends Fragment {
 				book[3] = books.getJSONObject(position).getString("canborrow");
 				book[4] = books.getJSONObject(position).getString("detailurl");
 			} catch (JSONException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			Intent intent = new Intent(getActivity().getApplicationContext(),
@@ -193,7 +192,7 @@ public class SearchBookFragment extends Fragment {
 			network = new NetWork(getActivity().getApplicationContext());
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair("requesttype", "2"));
-			params.add(new BasicNameValuePair("searchtype", "" + searchType));
+			params.add(new BasicNameValuePair("searchtype", searchType.toString()));
 			params.add(new BasicNameValuePair("keyword", keyword));
 			try {
 				books = network.GetResultFromNet(params);

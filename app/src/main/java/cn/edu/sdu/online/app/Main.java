@@ -59,11 +59,9 @@ public class Main extends Application {
 
     @Override
     public void onCreate() {
-
         // TODO Auto-generated method stub
         super.onCreate();
         app = this;
-
     }
 
     public Drawable[] getColors() {
@@ -227,8 +225,8 @@ public class Main extends Application {
                 ObjectInputStream is = new ObjectInputStream(in);
                 lessonList = (List<Lesson>) is.readObject();
 
-                for(Lesson lesson:lessonList) {
-                    Log.i(TAG, "lesson:"+lesson.toString());
+                for (Lesson lesson : lessonList) {
+                    Log.i(TAG, "lesson:" + lesson.toString());
                 }
                 is.close();
                 in.close();

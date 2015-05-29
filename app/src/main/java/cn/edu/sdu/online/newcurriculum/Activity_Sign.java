@@ -142,7 +142,7 @@ public class Activity_Sign extends Activity implements DataListener {
 		}
 		System.out.println("pai mimg zhi ximg");
 		HttpUtils http = new HttpUtils();
-		http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, params,
+		http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, params,
 				new RequestCallBack<String>() {
 
 					@Override

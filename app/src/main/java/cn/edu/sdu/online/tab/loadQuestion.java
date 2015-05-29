@@ -110,7 +110,7 @@ public class loadQuestion extends Fragment implements ActionBarListener{
 				RequestParams params = new RequestParams();
 				params.addBodyParameter("Type", "getaskdownrefresh");
 				HttpUtils http = new HttpUtils();
-				http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, params,
+				http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, params,
 						new RequestCallBack<String>() {
 
 							@Override
@@ -144,7 +144,7 @@ public class loadQuestion extends Fragment implements ActionBarListener{
 						String.valueOf(app.getDataStore().getInt(
 								"flagaskoldest", 0)));
 				HttpUtils http = new HttpUtils();
-				http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, pa,
+				http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, pa,
 						new RequestCallBack<String>() {
 
 							@Override

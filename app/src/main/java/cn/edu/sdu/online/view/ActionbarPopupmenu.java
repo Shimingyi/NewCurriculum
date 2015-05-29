@@ -53,19 +53,16 @@ public class ActionbarPopupmenu extends PopupWindow implements OnClickListener {
 		// 按从上到下顺序排列
 		switch (v.getId()) {
 		case R.id.popupwindow_me:
-			// TODO
 			intent = new Intent(context, Activity_IndividualCenter.class);
 			context.startActivity(intent);
 			break;
 		case R.id.popupwindow_login:
-			// TODO
 			intent = new Intent(context, Activity_Login.class);
 			context.startActivity(intent);
 			break;
 		case R.id.popupwindow_score:
 			intent = new Intent(context, Activity_ConsultCenter.class);
 			context.startActivity(intent);
-			// TODO
 			break;
 		case R.id.popupwindow_super:
 			intent = new Intent(context, StartActivity.class);

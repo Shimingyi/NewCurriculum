@@ -112,7 +112,7 @@ public class Activity_PublishHomework extends Activity {
 		params.addBodyParameter("content", ct);
 		params.addBodyParameter("deadline", deadline);
 		HttpUtils http = new HttpUtils();
-		http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, params,
+		http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, params,
 				new RequestCallBack<String>() {
 
 					@Override

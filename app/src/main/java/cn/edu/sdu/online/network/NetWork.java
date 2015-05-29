@@ -36,11 +36,11 @@ import cn.edu.sdu.online.modal.Person;
 
 public class NetWork {
 
-	private final static String LIBURL = "http://202.194.14.195:8080/curriculumlib/lib";
-	public final static String LoginURL = "http://202.194.14.195:8080/CurriculumServer/login";
+	private final static String LIB_URL = "http://202.194.14.195:8080/curriculumlib/lib";
+	public final static String LOGIN_URL = "http://202.194.14.195:8080/CurriculumServer/login";
 	private HttpPost httpRequest;
-	private int logintimes = 0;
-	private String loginmessage = null;
+	private int loginTimes = 0;
+	private String loginMessage = null;
 	private Context context;
     private final static String TAG = "FromNetWork";
 
@@ -50,7 +50,7 @@ public class NetWork {
 
 	public JSONArray GetResultFromNet(List<NameValuePair> params)
 			throws ClientProtocolException, IOException {
-		httpRequest = new HttpPost(LIBURL);
+		httpRequest = new HttpPost(LIB_URL);
 		httpRequest.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 		HttpResponse httpResponse = new DefaultHttpClient()
 				.execute(httpRequest);
@@ -65,7 +65,8 @@ public class NetWork {
 				jsonData += line + "\r\n";
 			}
 		} else {
-			Log.i("Network", "访问失败~");
+			Log.e("Reason",httpResponse.getStatusLine().getStatusCode()+"");
+			Log.e("Network", "访问失败~");
 		}
 		jsonData = jsonData.trim();
 		Log.i("GetResultFromNet", jsonData);
@@ -115,7 +116,7 @@ public class NetWork {
 			}
 		}
 
-		httpRequest = new HttpPost(LoginURL);
+		httpRequest = new HttpPost(LOGIN_URL);
 
 		httpRequest.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 		HttpResponse httpResponse = new DefaultHttpClient()

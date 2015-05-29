@@ -173,7 +173,7 @@ public class Activity_ConsultCenter_PinglunActivity extends Activity {
 		params.addBodyParameter("Type", "rankzan");
 		params.addBodyParameter("stateid", id);
 		HttpUtils http = new HttpUtils();
-		http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, params,
+		http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, params,
 				new RequestCallBack<String>() {
 
 					@Override

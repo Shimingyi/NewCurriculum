@@ -74,7 +74,7 @@ public class ReleaseQuestion extends Activity {
 			params.addBodyParameter("question_details", question_details
 					.getText().toString());
 			HttpUtils http = new HttpUtils();
-			http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, params,
+			http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, params,
 					new RequestCallBack<String>() {
 
 						@Override

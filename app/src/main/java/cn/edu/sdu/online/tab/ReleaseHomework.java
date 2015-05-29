@@ -111,7 +111,7 @@ Activity activity;
 				params.addBodyParameter("id",
 						app.getDataStore().getString("username", ""));
 				HttpUtils http = new HttpUtils();
-				http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, params,
+				http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, params,
 						new RequestCallBack<String>() {
 
 							@Override
@@ -212,7 +212,7 @@ Activity activity;
 				app.getDataStore().getString("username", ""));
 		params.addBodyParameter("homeworkid", String.valueOf(homeworkid));
 		HttpUtils http = new HttpUtils();
-		http.send(HttpRequest.HttpMethod.POST, NetWork.LoginURL, params,
+		http.send(HttpRequest.HttpMethod.POST, NetWork.LOGIN_URL, params,
 				new RequestCallBack<String>() {
 
 					@Override

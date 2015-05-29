@@ -4,17 +4,17 @@
     android:layout_height="match_parent"
     android:background="#FFF"
     android:orientation="vertical"
-    tools:context=".Activity_Main" >
+    tools:context=".Activity_Main">
 
     <ScrollView
         android:id="@+id/activity_main_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/main_title"
@@ -33,14 +33,14 @@
                 android:id="@+id/main_curriculumtable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="1dp" >
+                android:padding="1dp">
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/main_margin_horizontal"
                     android:layout_marginRight="@dimen/main_margin_horizontal"
-                    android:background="@color/main_table_row" >
+                    android:background="@color/main_table_row">
 
                     <TextView
                         android:layout_width="20dp"
@@ -119,14 +119,14 @@
                     android:layout_height="0dp"
                     android:layout_marginLeft="@dimen/main_margin_horizontal"
                     android:layout_marginRight="@dimen/main_margin_horizontal"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@color/main_table_row"
                         android:gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="20dp"
@@ -231,14 +231,14 @@
                     android:layout_height="0dp"
                     android:layout_marginLeft="@dimen/main_margin_horizontal"
                     android:layout_marginRight="@dimen/main_margin_horizontal"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@color/main_table_row"
                         android:gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="20dp"
@@ -347,13 +347,13 @@
                     android:layout_height="0dp"
                     android:layout_marginLeft="@dimen/main_margin_horizontal"
                     android:layout_marginRight="@dimen/main_margin_horizontal"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@color/main_table_row"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="20dp"
@@ -462,13 +462,13 @@
                     android:layout_height="0dp"
                     android:layout_marginLeft="@dimen/main_margin_horizontal"
                     android:layout_marginRight="@dimen/main_margin_horizontal"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@color/main_table_row"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="20dp"
@@ -575,13 +575,13 @@
                     android:layout_height="0dp"
                     android:layout_marginLeft="@dimen/main_margin_horizontal"
                     android:layout_marginRight="@dimen/main_margin_horizontal"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@color/main_table_row"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="20dp"
@@ -681,7 +681,6 @@
                         android:textSize="@dimen/main_curriculum_textsize" />
                 </TableRow>
 
-             
 
             </TableLayout>
 
@@ -698,16 +697,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                
+
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:id="@+id/main_buttons_row0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:id="@+id/main_ll_class"
@@ -716,7 +715,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/main_menu_ba_class"
                         android:gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <ImageView
                             android:layout_width="40dp"
@@ -742,7 +741,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/main_menu_ba_lib"
                         android:gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <ImageView
                             android:layout_width="40dp"
@@ -769,7 +768,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:gravity="center"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:id="@+id/main_ll_gpa"
@@ -778,7 +777,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/main_menu_ba_gpa"
                         android:gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <ImageView
                             android:layout_width="40dp"
@@ -805,7 +804,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/main_menu_ba_mession"
                         android:gravity="center"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <ImageView
                             android:layout_width="40dp"
